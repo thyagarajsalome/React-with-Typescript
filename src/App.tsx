@@ -1,26 +1,10 @@
-import ListGroup from "./components/ListGroup";
+import React from "react";
+import Alert from "./components/Alert";
+
 function App() {
-  let items = [
-    "New York",
-    "San Fransciso",
-    "Tokoyo",
-    "London",
-    "Paris",
-    "Dubai",
-    "Bangalore",
-  ];
-
-  const handleSelecItem = (item: string) => {
-    console.log(item);
-  };
-
   return (
     <div>
-      <ListGroup
-        items={items}
-        heading="Cities"
-        onSelectItem={handleSelecItem}
-      />
+      <Alert>Hello World</Alert>
     </div>
   );
 }
